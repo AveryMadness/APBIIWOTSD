@@ -1,0 +1,50 @@
+http://mc.pp.se/dc/ - Marcus Comstedt's Dreamcast Programming
+== Overview ==
+https://www.copetti.org/writings/consoles/dreamcast/ - Copetti: Dreamcast Architecture (saved locally as .htm)
+https://github.com/Kochise/dreamcast-docs - Big archive of Dreamcast docs (most files below came from here)
+
+== SH-4 ==
+https://0x04.net/~mwk/doc/sh/e602156_sh4.pdf - SH-4 Programming Manual, Hitachi (instruction set) [SH-4/e602156_sh4.pdf]
+https://www.renesas.com/en/document/mah/sh7750-sh7750s-sh7750r-group-users-manual-hardware - SH7750 Hardware Manual, Renesas (P0-P4, CCN, INTC, TMU, SCIF, DMAC, BSC) [SH-4/HD6417750SF200-Renesas.pdf]
+https://www.renesas.com/en/document/mas/sh-4-software-manual - SH-4 Software Manual, Renesas edition [SH-4/REN_rej09b0318_sh_4sm_MAS_20060913_1.pdf]
+http://mc.pp.se/dc/memory.html - Comstedt: Dreamcast memory map
+http://mc.pp.se/dc/cpu.html - Comstedt: SH-4 notes
+
+== System / Holly ==
+https://segaretro.org/images/7/78/DreamcastDevBoxSystemArchitecture.pdf - Sega: Dev.Box System Architecture (buses, Holly, areas) [System/]
+https://segaretro.org/images/8/8b/Dreamcast_Hardware_Specification_Outline.pdf - Sega: Hardware Specification Outline [System/]
+
+== Boot / BIOS ==
+http://mc.pp.se/dc/ip.bin.html - Comstedt: IP.BIN boot header, 1ST_READ.BIN
+http://mc.pp.se/dc/syscalls.html - Comstedt: BIOS system calls (for HLE boot)
+
+== PowerVR2 / TA ==
+http://mc.pp.se/dc/pvr.html - Comstedt: PowerVR
+https://github.com/Kochise/dreamcast-docs/tree/master/POWERVR/DOCS - Holly TA/CORE register sheet, interrupts, TA notes, video timing [PowerVR/]
+https://kos-docs.dreamcast.wiki/pvr__regs_8h.html - KallistiOS PVR register header
+
+== GD-ROM ==
+https://segaxtreme.net/resources/gd-rom-protocol-spi-sega-packet-interface-specifications.189/ - Sega: GD-ROM Protocol SPI 1.30 [GD-ROM/cdif131e.doc]
+https://github.com/Kochise/dreamcast-docs/tree/master/GDROM/DOCS - More GD-ROM docs
+
+== Maple ==
+http://mc.pp.se/dc/maplebus.html - Comstedt: Maple bus protocol
+https://dreamcast.wiki/Maple_bus - dreamcast.wiki: Maple bus
+https://segaretro.org/images/0/0e/01_sdhwr100e.pdf - Sega: controller hardware spec [Maple/]
+https://github.com/Kochise/dreamcast-docs/tree/master/CONTROLR/DOCS - Sega: all peripheral specs (VMU, gun, keyboard...)
+
+== AICA ==
+https://hitmen.c02.at/files/docs/dc/aica_v08.txt - AICA Documentation v0.8 (registers) [AICA/]
+https://segaxtreme.net/resources/aica-fq8005-sound-block-users-manual.185/ - Sega: AICA (FQ8005) Sound-block User's Manual
+https://github.com/Kochise/dreamcast-docs/tree/master/AICA/DOCS - AICA spec + ARM7TDMI manuals (AICA's ARM7DI is ARMv3: no Thumb, no BX, no LDRH/STRH)
+
+== Tests ==
+https://github.com/SingleStepTests/sh4 - SH-4 JSON single-instruction tests (generated from Reicast, v0.1)
+https://github.com/KallistiOS/KallistiOS - KallistiOS homebrew SDK + examples
+https://github.com/ArtemioUrbina/240pTestSuite - 240p Test Suite (video output)
+
+== Reference emulators ==
+https://github.com/flyinghead/flycast - Flycast (C++, accurate, trace reference)
+https://github.com/Senryoku/Deecy - Deecy (Zig, readable)
+https://github.com/inolen/redream - redream (C, clean architecture)
+https://github.com/lutris/lxdream - lxdream (C, well commented)

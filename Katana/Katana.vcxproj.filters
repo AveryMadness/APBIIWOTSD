@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Disc">
+      <UniqueIdentifier>{a2ede25d-f49e-4a2c-91ef-a3d7b8dcc84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Disc\Formats">
+      <UniqueIdentifier>{5ad76e17-a859-4b3b-ba18-33d9900d93d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GD-ROM">
+      <UniqueIdentifier>{578cea4e-5d0e-42cf-90be-11f7d39cfd43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SH4">
+      <UniqueIdentifier>{792ca043-18a7-4474-825a-165ce4056bd0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AICA.cpp" />
+    <ClCompile Include="CLX2.cpp" />
+    <ClCompile Include="Disc\Disc.cpp">
+      <Filter>Disc</Filter>
+    </ClCompile>
+    <ClCompile Include="Disc\Formats\GDI.cpp">
+      <Filter>Disc\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="Disc\IPBin.cpp">
+      <Filter>Disc</Filter>
+    </ClCompile>
+    <ClCompile Include="Disc\ISO9660.cpp">
+      <Filter>Disc</Filter>
+    </ClCompile>
+    <ClCompile Include="GD-ROM\GDROM.cpp">
+      <Filter>GD-ROM</Filter>
+    </ClCompile>
+    <ClCompile Include="Holly.cpp" />
+    <ClCompile Include="Maple.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="SH4\INTC.cpp">
+      <Filter>SH4</Filter>
+    </ClCompile>
+    <ClCompile Include="SH4\SCIF.cpp">
+      <Filter>SH4</Filter>
+    </ClCompile>
+    <ClCompile Include="SH4\SH4Interpreter.cpp">
+      <Filter>SH4</Filter>
+    </ClCompile>
+    <ClCompile Include="SH4\SH4Registers.cpp">
+      <Filter>SH4</Filter>
+    </ClCompile>
+    <ClCompile Include="SH4\SH7091.cpp">
+      <Filter>SH4</Filter>
+    </ClCompile>
+    <ClCompile Include="SH4\TMU.cpp">
+      <Filter>SH4</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AICA.h" />
+    <ClInclude Include="CLX2.h" />
+    <ClInclude Include="Disc\Disc.h">
+      <Filter>Disc</Filter>
+    </ClInclude>
+    <ClInclude Include="Disc\DiscTOC.h">
+      <Filter>Disc</Filter>
+    </ClInclude>
+    <ClInclude Include="Disc\Formats\GDI.h">
+      <Filter>Disc\Formats</Filter>
+    </ClInclude>
+    <ClInclude Include="Disc\IPBin.h">
+      <Filter>Disc</Filter>
+    </ClInclude>
+    <ClInclude Include="Disc\ISO9660.h">
+      <Filter>Disc</Filter>
+    </ClInclude>
+    <ClInclude Include="GD-ROM\GDROM.h">
+      <Filter>GD-ROM</Filter>
+    </ClInclude>
+    <ClInclude Include="Holly.h" />
+    <ClInclude Include="Maple.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="SH4\INTC.h">
+      <Filter>SH4</Filter>
+    </ClInclude>
+    <ClInclude Include="SH4\SCIF.h">
+      <Filter>SH4</Filter>
+    </ClInclude>
+    <ClInclude Include="SH4\SH4Interpreter.h">
+      <Filter>SH4</Filter>
+    </ClInclude>
+    <ClInclude Include="SH4\SH4Registers.h">
+      <Filter>SH4</Filter>
+    </ClInclude>
+    <ClInclude Include="SH4\SH7091.h">
+      <Filter>SH4</Filter>
+    </ClInclude>
+    <ClInclude Include="SH4\TMU.h">
+      <Filter>SH4</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
