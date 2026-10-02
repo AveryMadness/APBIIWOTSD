@@ -1,0 +1,39 @@
+# build output (x64 + Win32, solution root and per project)
+[Xx]64/
+[Ww]in32/
+[Dd]ebug/
+[Rr]elease/
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.iobj
+*.ipdb
+*.pch
+*.tlog
+*.recipe
+*.lastbuildstate
+*.exe
+*.lib
+
+# ide
+.vs/
+.idea/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# disc images and dumps (copyrighted, never commit)
+*.gdi
+*.cdi
+*.chd
+*.cue
+*.iso
+*.raw
+*.bin
+*.zip
+*.7z
+
+# test output
+*.wav
