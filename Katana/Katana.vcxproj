@@ -150,6 +150,7 @@
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="SH4\INTC.cpp" />
     <ClCompile Include="SH4\SCIF.cpp" />
+    <ClCompile Include="SH4\SH4Bus.cpp" />
     <ClCompile Include="SH4\SH4Interpreter.cpp" />
     <ClCompile Include="SH4\SH4Registers.cpp" />
     <ClCompile Include="SH4\SH7091.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="Memory.h" />
     <ClInclude Include="SH4\INTC.h" />
     <ClInclude Include="SH4\SCIF.h" />
+    <ClInclude Include="SH4\SH4Bus.h" />
     <ClInclude Include="SH4\SH4Interpreter.h" />
     <ClInclude Include="SH4\SH4Registers.h" />
     <ClInclude Include="SH4\SH7091.h" />

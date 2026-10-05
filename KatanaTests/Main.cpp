@@ -6,6 +6,8 @@
 #include "Katana/Disc/Disc.h"
 #include <string>
 
+#include "Katana/Disc/ISO9660.h"
+
 static void WriteLE32(std::ofstream& stream, uint32_t value)
 {
     stream.write(reinterpret_cast<const char*>(&value), sizeof(value));
@@ -132,9 +134,42 @@ int main(int argc, char* argv[])
         }
         
         wav.close();
-        printf("Wrote %s", std::format("track{:02}.wav", Track.Number).c_str());
+        printf("Wrote %s\n", std::format("track{:02}.wav", Track.Number).c_str());
     }
     
+    printf("Dumping Data...\n");
+
+    uint8_t lastSession = toc.Tracks.back().Session;
+
+    for (uint8_t session = 1; session <= lastSession; session++)
+    {
+        const Track* dataTrack = nullptr;
+        for (const Track& track : toc.Tracks)
+        {
+            if (track.Session == session && track.Type != TrackType::Audio)
+            {
+                dataTrack = &track;
+                break;
+            }
+        }
+
+        if (!dataTrack)
+            continue;
+
+        try
+        {
+            std::string folder = std::format("track{:02}", dataTrack->Number);
+        
+            ISO9660 iso(*disc, dataTrack->StartFad);
+            printf("%s: %s\n", folder.c_str(), iso.GetVolumeId().c_str());
+            uint32_t count = iso.ExtractAll(folder);
+            printf("  extracted %u files\n", count);
+        }
+        catch (std::exception& e)
+        {
+            printf("Failed to dump track %u\n", dataTrack->Number);
+        }
+    }
     
     return 0;
 }
